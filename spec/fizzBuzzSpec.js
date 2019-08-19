@@ -34,4 +34,16 @@ describe("JavaScript FizzBuzz", function() {
       expect(buzz.isDivisibleByFiveAndThree(12)).toBe(false);
     });
   });
+
+  describe("when playing, says", function() {
+    it('"Fizz" when a number is divisible by 3', function() {
+      expect(buzz.says(3)).toEqual("Fizz");
+    });
+    it('"Buzz" when a number is divisible by 5', function() {
+      expect(buzz.says(5)).toEqual("Buzz");
+    });
+    it('"FizzBuzz" when a number is divisible by 3', function() {
+      expect(buzz.says(15)).toEqual("FizzBuzz");
+    });
+  });
 });
